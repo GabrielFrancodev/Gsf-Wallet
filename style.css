@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@1,100 & display=swap');
+
+:root {
+    --fonte-textos: 'Unbounded', cursive;
+    --verde-claro: #304D30;
+    --verde-escuro: #163020;
+    --roxo-claro: #a523d8;
+    --roxo-escuro:#492358;
+    --amarelo-claro:#ffff32;
+    --amarelo-escuro:#cac712;
+    --azul-claro:#2634fc;
+    --azul-escuro:#1531a1;
+    --laranja-claro:#fc8a10;
+    --laranja-escuro:#c27304;
+    --vermelho-claro:#f50414;
+    --vermelho-escuro:#b80217;
+    --branco: rgb(247, 242, 242);
+}
+
+[data-color-palette="acoes"] {
+    --main-background: linear-gradient(180deg, var(--verde-claro) 0%, var(--verde-escuro) 48.44%, #01080E 100%);
+}
+
+[data-color-palette="fii"]{
+    --main-background: linear-gradient(180deg, var(--roxo-claro) 0%, var(--roxo-escuro) 48.44%, #08010e 100%);
+}
+
+[data-color-palette="renda__fixa"]{
+    --main-background: linear-gradient(180deg, var(--amarelo-claro) 0%, var(--amarelo-escuro) 48.44%, #0e0e01 100%);
+
+}
+
+[data-color-palette="fundos__internacionais"]{
+    --main-background: linear-gradient(180deg, var(--azul-claro) 0%, var(--azul-escuro) 48.44%, #01030e 100%);
+
+}
+
+[data-color-palette="fundos__multimercado"]{
+    --main-background: linear-gradient(180deg, var(--laranja-claro) 0%, var(--laranja-escuro) 48.44%, #01080E 100%);
+
+}
+
+[data-color-palette="cripto"]{
+    --main-background: linear-gradient(180deg, var(--vermelho-claro) 0%, var(--vermelho-escuro) 48.44%, #01080E 100%);
+
+}
+
+[data-container-buttons="acoes"]{
+    --background-container: var(--verde-claro);
+    --border-container: var(--verde-escuro);
+}
+[data-container-buttons="fii"]{
+    --background-container: var(--roxo-claro);
+    --border-container: var(--roxo-escuro);
+}
+
+[data-container-buttons="renda__fixa"]{
+    --background-container: var(--amarelo-claro);
+    --border-container: var(--amarelo-escuro);
+}
+
+[data-container-buttons="fundos__internacionais"]{
+    --background-container: var(--azul-claro);
+    --border-container: var(--azul-escuro);
+}
+
+[data-container-buttons="fundos__multimercado"]{
+    --background-container: var(--laranja-claro);
+    --border-container: var(--laranja-escuro);
+}
+
+[data-container-buttons="cripto"]{
+    --background-container: :var(--vermelho-claro);
+    --border-container: var(--vermelho-claro);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    background: var(--main-background)
+}
+
+.container {
+    position: relative;
+    display: block;
+    padding-bottom: 30%;
+
+}
+
+.text { 
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 80px;
+
+}
+
+.logo__principal { 
+    width: 10%;
+    margin-left: 35px;
+    
+}
+
+.img__tematica {
+    width: 35%;
+    position: absolute;
+    right: 120px;
+    
+}
+
+.titulo__setor {
+    font-size: 60px;
+    color: var(--branco);
+    font-family: var(--fonte-textos);
+    font-weight: 300;
+}
+
+.frase__relacionada {
+    color: var(--branco);
+    font-size: 20px;
+    font-family: var(--fonte-textos);
+    font-weight: 200;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#container__botoes {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    padding: 50px;
+    background-color: var(--background-container);
+    border-radius: 15px;
+    border: solid 3px var(--border-container);
+    margin-bottom: 100px ;
+}
+
+button {
+    font-size: 1em;
+    font-family: var(--fonte-textos);
+    width: 30%;
+    padding: 10px 0 10px 0 ;
+    text-transform: none;
+    border: none;
+    border-radius: 5px;
+    background-color: inherit;
+    color: var(--branco);
+    cursor: pointer;
+    background: var(--main-background)
+}
+
+
+.button__acoes:hover {
+    background: linear-gradient(180deg, #304D30 0%, #163020 48.44%, #01080E 100%);
+}
+.button__fii:hover {
+    background: linear-gradient(180deg, #a523d8 0%, #492358 48.44%, #08010e 100%);
+}
+
+.button__renda__fixa:hover {
+    background: linear-gradient(180deg, #ffff32 0%, #cac712 48.44%, #0e0e01 100%);
+}
+
+.button__fundos__internacionais:hover {
+    background: linear-gradient(180deg, #2634fc 0%, #1531a1 48.44%, #01030e 100%);
+}
+
+.button__fundos__multimercado:hover {
+    background: linear-gradient(180deg, #fc8a10 0%, #c27304 48.44%, #01080E 100%);
+}
+
+.button__cripto:hover {
+    background: linear-gradient(180deg, #f50414 0%, #b80217 48.44%, #01080E 100%);
+}
